@@ -1,4 +1,3 @@
-
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
@@ -16,3 +15,11 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
+vim.keymap.set('n', '<leader>ee', ':Neotree toggle<CR>')
+vim.keymap.set('n', '<leader>ww', ':w<CR>')
+vim.keymap.set('n', '<leader>qq', ':q!<CR>')
+vim.keymap.set('n', '<leader>wq', ':wq<CR>')
+
+-- lsp warnings hide or show
+vim.keymap.set('n', '<leader>wh', ':lua vim.diagnostic.config({virtual_text=false})<CR>')
+vim.keymap.set('n', '<leader>ws', ':lua vim.diagnostic.config({virtual_text=true})<CR>')
