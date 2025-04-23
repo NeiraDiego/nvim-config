@@ -6,6 +6,8 @@ vim.g.mapleader = " "
 vim.g.background = "light"
 
 vim.opt.swapfile = false
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
@@ -14,7 +16,6 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.wo.number = true
 vim.keymap.set('n', '<leader>ee', ':Neotree toggle<CR>')
 vim.keymap.set('n', '<leader>ww', ':w<CR>')
 vim.keymap.set('n', '<leader>qq', ':q!<CR>')
